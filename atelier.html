@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Atelier &amp; Craft | Aur&eacute;lia</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="top-ribbon">Autumn / Winter 2026 Couture &amp; Editorial Appointments Now Open</div>
+<header class="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">
+      Aur&eacute;lia
+      <span>Maison de Mode</span>
+    </a>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Open Navigation">&#9776;</button>
+    <nav class="nav-menu" id="navMenu">
+      <a href="index.html" class="">Home</a>
+      <a href="collections.html" class="">Lookbook</a>
+      <a href="atelier.html" class="active">Atelier</a>
+      <a href="styling.html" class="">Styling</a>
+      <a href="journal.html" class="">Journal</a>
+      <a href="contact.html" class="">Contact</a>
+    </nav>
+  </div>
+</header>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="kicker">Heritage &amp; Philosophy</span>
+      <h1 class="section-heading">The Craft Atelier</h1>
+      <p>Every garment begins at the loom—honoring slow-fashion ethics, botanical dyes, and architectural pattern cutting.</p>
+    </div>
+  </section>
+
+  <main class="section-space">
+    <div class="container split-grid">
+      <div>
+        <span class="kicker">Slow Luxury Ethos</span>
+        <h2 class="section-heading">Intimate Craftsmanship Over Mass Production</h2>
+        <p style="color:var(--ink-muted); margin-bottom:1.2rem;">
+          At Aur&eacute;lia, we collaborate directly with master handloom weavers, bandhani tie-dye artisans, and zardozi embroiderers to create heirloom pieces designed to endure decades.
+        </p>
+        <p style="color:var(--ink-muted);">
+          Each silhouette is drafted to individual measurements in our studio, eliminating deadstock inventory and celebrating natural fabric drape.
+        </p>
+        <div class="metrics-bar">
+          <div class="metric">
+            <h4>50+</h4>
+            <span>Master Artisans</span>
+          </div>
+          <div class="metric">
+            <h4>100%</h4>
+            <span>Made to Order</span>
+          </div>
+          <div class="metric">
+            <h4>Zero</h4>
+            <span>Mass Deadstock</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="background:var(--bg-blush); padding:3rem; border:1px solid var(--border-hairline);">
+        <span class="kicker">Three Pillars of Design</span>
+        <h3 class="serif" style="font-size:1.9rem; margin-bottom:1.5rem;">Our Atelier Process</h3>
+        <div style="margin-bottom:1.5rem; padding-bottom:1.25rem; border-bottom:1px solid var(--border-hairline);">
+          <strong style="font-size:0.82rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--gold-accent);">01 &bull; Raw Textile Sourcing</strong>
+          <p style="font-size:0.9rem; color:var(--ink-muted); margin-top:0.35rem;">Unbleached khadi, mulberry silk, and chanderi sourced directly from regional weaving clusters.</p>
+        </div>
+        <div style="margin-bottom:1.5rem; padding-bottom:1.25rem; border-bottom:1px solid var(--border-hairline);">
+          <strong style="font-size:0.82rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--gold-accent);">02 &bull; Sculptural Draping</strong>
+          <p style="font-size:0.9rem; color:var(--ink-muted); margin-top:0.35rem;">Hand-pinned on bespoke dress forms to balance fluid movement with clean tailoring.</p>
+        </div>
+        <div>
+          <strong style="font-size:0.82rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--gold-accent);">03 &bull; Hand-Finished Couture</strong>
+          <p style="font-size:0.9rem; color:var(--ink-muted); margin-top:0.35rem;">French seams, hand-rolled hems, and heirloom embroidery executed by specialist karigars.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="logo" style="color: var(--bg-ivory);">
+          Aur&eacute;lia
+          <span>Maison de Mode</span>
+        </div>
+        <p style="margin-top: 1rem; max-width: 340px; font-size: 0.86rem; color: rgba(250,247,242,0.72);">
+          Poetic silhouettes, handloom heritage textiles, and bespoke editorial styling crafted with slow-luxury precision.
+        </p>
+      </div>
+      <div class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="collections.html">Lookbook</a>
+        <a href="atelier.html">Atelier</a>
+        <a href="styling.html">Styling</a>
+        <a href="journal.html">Journal</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-base">
+      <span>&copy; 2026 Aur&eacute;lia Maison de Mode. All rights reserved.</span>
+      <span>6-Page Aesthetic Fashion Portfolio</span>
+    </div>
+  </div>
+</footer>
+
+<div class="modal-backdrop" id="lookModal">
+  <div class="modal-dialog">
+    <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close">&times;</button>
+    <div class="modal-left" id="mLeft">
+      <span class="kicker" id="mSeason" style="color:#FAF7F2;">Season</span>
+      <h3 class="serif" id="mCat" style="font-size:1.65rem;">Category</h3>
+    </div>
+    <div class="modal-right">
+      <span class="kicker">Garment Moodboard</span>
+      <h2 class="serif" id="mTitle" style="font-size:2rem; margin-bottom:0.75rem;">Title</h2>
+      <p id="mSummary" style="font-size:0.9rem; color:var(--ink-muted); margin-bottom:1rem;"></p>
+      <p style="font-size:0.84rem;"><strong>Textile:</strong> <span id="mTextile"></span></p>
+      <p style="font-size:0.84rem; margin-top:0.45rem;"><strong>Styling Note:</strong> <span id="mStyling"></span></p>
+      <div style="margin-top:1rem;">
+        <span style="font-size:0.7rem; text-transform:uppercase; letter-spacing:0.16em; color:var(--ink-muted);">Color Story</span>
+        <div class="palette-dots" id="mPalette"></div>
+      </div>
+      <a href="contact.html" id="mBookBtn" class="btn btn-dark">Inquire About This Piece</a>
+    </div>
+  </div>
+</div>
+  <script src="js/main.js"></script>
+</body>
+</html>
