@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editorial Journal | Aur&eacute;lia</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="top-ribbon">Autumn / Winter 2026 Couture &amp; Editorial Appointments Now Open</div>
+<header class="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">
+      Aur&eacute;lia
+      <span>Maison de Mode</span>
+    </a>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Open Navigation">&#9776;</button>
+    <nav class="nav-menu" id="navMenu">
+      <a href="index.html" class="">Home</a>
+      <a href="collections.html" class="">Lookbook</a>
+      <a href="atelier.html" class="">Atelier</a>
+      <a href="styling.html" class="">Styling</a>
+      <a href="journal.html" class="active">Journal</a>
+      <a href="contact.html" class="">Contact</a>
+    </nav>
+  </div>
+</header>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="kicker">The Maison Magazine</span>
+      <h1 class="section-heading">Editorial Journal</h1>
+      <p>Notes on contemporary aesthetics, handloom textile heritage, seasonal color stories, and mindful dressing.</p>
+    </div>
+  </section>
+
+  <main class="section-space">
+    <div class="container">
+      <article class="journal-featured">
+        <div class="journal-cover">
+          <span class="kicker" style="color:var(--gold-soft);">Cover Story &bull; Autumn / Winter 2026</span>
+          <h2 class="serif" style="font-size:2.3rem;">The Poetry of Unbleached Silk &amp; Warm Earth Tones</h2>
+        </div>
+        <div class="journal-excerpt">
+          <span class="kicker">Editorial Note</span>
+          <h3 class="serif" style="font-size:1.85rem; margin-bottom:1rem;">Why Texture Is the New Ornament</h3>
+          <p style="color:var(--ink-muted); font-size:0.94rem; margin-bottom:1.5rem;">
+            In an era of fleeting micro-trends, true aesthetic permanence lies in the raw grain of handspun khadi, the subtle sheen of mulberry silk, and silhouettes that move effortlessly with the body.
+          </p>
+          <a href="collections.html" class="btn btn-dark" style="align-self:flex-start;">Explore The Collection</a>
+        </div>
+      </article>
+
+      <div class="cards-grid" id="journalGrid"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="logo" style="color: var(--bg-ivory);">
+          Aur&eacute;lia
+          <span>Maison de Mode</span>
+        </div>
+        <p style="margin-top: 1rem; max-width: 340px; font-size: 0.86rem; color: rgba(250,247,242,0.72);">
+          Poetic silhouettes, handloom heritage textiles, and bespoke editorial styling crafted with slow-luxury precision.
+        </p>
+      </div>
+      <div class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="collections.html">Lookbook</a>
+        <a href="atelier.html">Atelier</a>
+        <a href="styling.html">Styling</a>
+        <a href="journal.html">Journal</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-base">
+      <span>&copy; 2026 Aur&eacute;lia Maison de Mode. All rights reserved.</span>
+      <span>6-Page Aesthetic Fashion Portfolio</span>
+    </div>
+  </div>
+</footer>
+
+<div class="modal-backdrop" id="lookModal">
+  <div class="modal-dialog">
+    <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close">&times;</button>
+    <div class="modal-left" id="mLeft">
+      <span class="kicker" id="mSeason" style="color:#FAF7F2;">Season</span>
+      <h3 class="serif" id="mCat" style="font-size:1.65rem;">Category</h3>
+    </div>
+    <div class="modal-right">
+      <span class="kicker">Garment Moodboard</span>
+      <h2 class="serif" id="mTitle" style="font-size:2rem; margin-bottom:0.75rem;">Title</h2>
+      <p id="mSummary" style="font-size:0.9rem; color:var(--ink-muted); margin-bottom:1rem;"></p>
+      <p style="font-size:0.84rem;"><strong>Textile:</strong> <span id="mTextile"></span></p>
+      <p style="font-size:0.84rem; margin-top:0.45rem;"><strong>Styling Note:</strong> <span id="mStyling"></span></p>
+      <div style="margin-top:1rem;">
+        <span style="font-size:0.7rem; text-transform:uppercase; letter-spacing:0.16em; color:var(--ink-muted);">Color Story</span>
+        <div class="palette-dots" id="mPalette"></div>
+      </div>
+      <a href="contact.html" id="mBookBtn" class="btn btn-dark">Inquire About This Piece</a>
+    </div>
+  </div>
+</div>
+  <script src="js/main.js"></script>
+</body>
+</html>
