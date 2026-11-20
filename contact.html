@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Private Concierge &amp; Contact | Aur&eacute;lia</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="top-ribbon">Autumn / Winter 2026 Couture &amp; Editorial Appointments Now Open</div>
+<header class="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">
+      Aur&eacute;lia
+      <span>Maison de Mode</span>
+    </a>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Open Navigation">&#9776;</button>
+    <nav class="nav-menu" id="navMenu">
+      <a href="index.html" class="">Home</a>
+      <a href="collections.html" class="">Lookbook</a>
+      <a href="atelier.html" class="">Atelier</a>
+      <a href="styling.html" class="">Styling</a>
+      <a href="journal.html" class="">Journal</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </div>
+</header>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="kicker">Appointments &amp; Inquiries</span>
+      <h1 class="section-heading">Private Concierge</h1>
+      <p>Reserve a private atelier consultation, inquire about custom sizing, or connect with our press office.</p>
+    </div>
+  </section>
+
+  <main class="section-space">
+    <div class="container contact-grid">
+      <div class="studio-panel">
+        <span class="kicker">Flagship Salon</span>
+        <h3 class="serif" style="font-size:2rem; margin-bottom:0.75rem;">Visit Aur&eacute;lia Atelier</h3>
+        <p style="font-size:0.88rem; opacity:0.8;">Private fittings and styling consultations are hosted by appointment.</p>
+
+        <div class="studio-item">
+          <label>Atelier Location</label>
+          <p>22 Courtyard Pavilion, Bodakdev, Ahmedabad, Gujarat</p>
+        </div>
+        <div class="studio-item">
+          <label>Concierge Desk</label>
+          <p>concierge@aurelia-maison.example</p>
+        </div>
+        <div class="studio-item">
+          <label>Salon Hours</label>
+          <p>Tuesday &ndash; Saturday &bull; 11:00 AM &ndash; 7:00 PM IST</p>
+        </div>
+      </div>
+
+      <form class="form-box" id="atelierForm">
+        <div class="field">
+          <label for="guestName">Your Name</label>
+          <input type="text" id="guestName" required placeholder="Enter your full name">
+        </div>
+        <div class="field">
+          <label for="guestEmail">Email Address</label>
+          <input type="email" id="guestEmail" required placeholder="you@example.com">
+        </div>
+        <div class="field">
+          <label for="serviceSelect">Appointment Interest</label>
+          <select id="serviceSelect">
+            <option value="Custom Bridal & Couture">Custom Bridal &amp; Couture</option>
+            <option value="Editorial Direction">Editorial &amp; Campaign Direction</option>
+            <option value="Capsule Wardrobe">Capsule Wardrobe Curation</option>
+            <option value="Lookbook Piece Inquiry">Lookbook Piece Inquiry</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="apptDate">Preferred Date</label>
+          <input type="date" id="apptDate" required>
+        </div>
+        <div class="field">
+          <label for="messageBox">Styling &amp; Silhouette Notes</label>
+          <textarea id="messageBox" rows="4" placeholder="Tell us about your occasion, preferred palette, or desired lookbook piece..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark" style="width:100%;">Request Private Appointment</button>
+        <div class="toast-msg" id="formToast"></div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="logo" style="color: var(--bg-ivory);">
+          Aur&eacute;lia
+          <span>Maison de Mode</span>
+        </div>
+        <p style="margin-top: 1rem; max-width: 340px; font-size: 0.86rem; color: rgba(250,247,242,0.72);">
+          Poetic silhouettes, handloom heritage textiles, and bespoke editorial styling crafted with slow-luxury precision.
+        </p>
+      </div>
+      <div class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="collections.html">Lookbook</a>
+        <a href="atelier.html">Atelier</a>
+        <a href="styling.html">Styling</a>
+        <a href="journal.html">Journal</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-base">
+      <span>&copy; 2026 Aur&eacute;lia Maison de Mode. All rights reserved.</span>
+      <span>6-Page Aesthetic Fashion Portfolio</span>
+    </div>
+  </div>
+</footer>
+
+<div class="modal-backdrop" id="lookModal">
+  <div class="modal-dialog">
+    <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close">&times;</button>
+    <div class="modal-left" id="mLeft">
+      <span class="kicker" id="mSeason" style="color:#FAF7F2;">Season</span>
+      <h3 class="serif" id="mCat" style="font-size:1.65rem;">Category</h3>
+    </div>
+    <div class="modal-right">
+      <span class="kicker">Garment Moodboard</span>
+      <h2 class="serif" id="mTitle" style="font-size:2rem; margin-bottom:0.75rem;">Title</h2>
+      <p id="mSummary" style="font-size:0.9rem; color:var(--ink-muted); margin-bottom:1rem;"></p>
+      <p style="font-size:0.84rem;"><strong>Textile:</strong> <span id="mTextile"></span></p>
+      <p style="font-size:0.84rem; margin-top:0.45rem;"><strong>Styling Note:</strong> <span id="mStyling"></span></p>
+      <div style="margin-top:1rem;">
+        <span style="font-size:0.7rem; text-transform:uppercase; letter-spacing:0.16em; color:var(--ink-muted);">Color Story</span>
+        <div class="palette-dots" id="mPalette"></div>
+      </div>
+      <a href="contact.html" id="mBookBtn" class="btn btn-dark">Inquire About This Piece</a>
+    </div>
+  </div>
+</div>
+  <script src="js/main.js"></script>
+</body>
+</html>
